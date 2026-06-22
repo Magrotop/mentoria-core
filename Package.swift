@@ -4,16 +4,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "mentoria-core-tools",
+    name: "MentoriaCore",
     products: [
         .library(
-            name: "MentoriaCore",
-            targets: ["MentoriaCore"]
+            name: "MentoriaCoreNetworking",
+            targets: ["TargetNetworking"]
+        ),
+        .library(
+            name: "MentoriaCoreAnalytics",
+            targets: ["TargetAnalytics"]
         )
     ],
     targets: [
         .target(
-            name: "MentoriaCore"
+            name: "TargetNetworking"
+        ),
+        .target(
+            name: "TargetAnalytics",
+            dependencies: ["TargetNetworking"]
         )
     ]
 )
