@@ -4,13 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MentoriaCore",
-//    targets: [
-//        // Targets are the basic building blocks of a package, defining a module or a test suite.
-//        // Targets can depend on other targets in this package and products from dependencies.
-//        .executableTarget(
-//            name: "MentoriaCore"),
-//    ]
+    name: "mentoria-core-tools",
     products: [
         .library(
             name: "MentoriaCore",
